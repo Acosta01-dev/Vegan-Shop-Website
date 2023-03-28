@@ -11,11 +11,11 @@ This is a static website for a vegan e-shop that offers a variety of vegan produ
 This website was built using HTML, CSS, and JavaScript. The website features responsive design, although this aspect may need some work.
 
 #### TODO
-.1 Improve the website's responsive design by:
+1. Improve the website's responsive design by:
 -Adjusting font/image sizes to be more legible on smaller screens
 -Updating button placement for easier navigation on mobile devices
 -Optimizing image sizes for faster load times on slow connections
-.2 Add a working shopping cart using JS by:
+2. Add a working shopping cart using JS by:
 -Allowing customers to add products to their cart
 -Displaying the contents of the cart on the page
 -Allowing customers to adjust the quantity of each item in their cart
