@@ -1,0 +1,65 @@
+.custom-shape-divider-bottom-1677745167 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+
+
+}
+
+.custom-shape-divider-bottom-1677745167 svg {
+    position: relative;
+    display: block;
+    width: calc(163% + 1.3px);
+
+
+    height: 500px;
+
+    z-index: 0;
+
+
+}
+
+.custom-shape-divider-bottom-1677745167 .shape-fill {
+    fill: #FFFFFF;
+
+}
+
+
+@media screen and (min-height: 895px) and (max-height: 1000px) {
+    .custom-shape-divider-bottom-1677745167 svg {
+        height: 550px;
+        
+    }
+
+}
+
+@media only screen and (max-width: 876px) {
+  
+    .custom-shape-divider-bottom-1677745167 svg {
+        height: 450px;
+
+    }
+
+    .custom-shape-divider-bottom-1677745167 .shape-fill {
+        fill: red;
+    
+    }
+    
+}
+
+@media only screen and (max-width: 390px) {
+
+
+    .custom-shape-divider-bottom-1677745167 svg {
+        height: 250px;
+
+    }
+
+    .custom-shape-divider-bottom-1677745167 .shape-fill {
+        fill: blue;
+    
+    }
+}
