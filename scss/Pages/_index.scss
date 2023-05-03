@@ -12,6 +12,7 @@
 
 .main_index {
     grid-area: main;
+   
 }
 
 
@@ -41,8 +42,17 @@
         transform: translateX(-50%);
 
         filter: drop-shadow(1px 1px 1px rgb(5, 69, 4));
-
-
+      
+        @media (max-height: 650px){
+           width: 60%;
+        }
+        @media (max-height: 600px){
+            width: 50%;
+        }
+        @media (max-height: 550px){
+            width: 0%;
+        }
+         
     }
 
     @media #{$extraLargeDesktop} {
