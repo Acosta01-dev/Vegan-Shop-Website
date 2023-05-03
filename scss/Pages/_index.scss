@@ -29,7 +29,9 @@
 
     margin-top: 4.5rem;
 
-
+    @media (max-height: 550px){
+        height: 80vh;
+    }
 
 
     img {
@@ -93,7 +95,13 @@
 
     background-size: cover;
 
-
+    @media (max-height: 550px){
+        height: 85vh;
+        -webkit-clip-path: polygon(100% 0, 100% 83%, 0 93%, 0 0);
+             clip-path: polygon(100% 0, 100% 83%, 0 93%, 0 0);
+    }
+   
+    
 
     @media #{$extraLargeDesktop} {
         height: 63vh;

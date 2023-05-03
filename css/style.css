@@ -329,6 +329,9 @@ form {
   display: flex;
   flex-direction: column;
   margin-top: 4.5rem; }
+  @media (max-height: 550px) {
+    #main_section-intro {
+      height: 80vh; } }
   #main_section-intro img {
     width: 100%;
     max-width: 20rem;
@@ -364,6 +367,11 @@ form {
   -webkit-clip-path: polygon(100% 0, 100% 63%, 0 93%, 0 0);
   clip-path: polygon(100% 0, 100% 63%, 0 93%, 0 0);
   background-size: cover; }
+  @media (max-height: 550px) {
+    .main_section-intro-bg {
+      height: 85vh;
+      -webkit-clip-path: polygon(100% 0, 100% 83%, 0 93%, 0 0);
+      clip-path: polygon(100% 0, 100% 83%, 0 93%, 0 0); } }
   @media only screen and (min-width: 1401px) {
     .main_section-intro-bg {
       height: 63vh; } }
