@@ -1,0 +1,596 @@
+.body_index {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1px 1fr auto;
+
+    grid-template-areas:
+        "header header"
+        "main main"
+        "footer footer";
+}
+
+
+.main_index {
+    grid-area: main;
+   
+}
+
+
+
+#main_section-intro {
+
+    position: relative;
+    width: 100%;
+
+    height: 61vh;
+    max-height: 28rem;
+    display: flex;
+    flex-direction: column;
+
+    margin-top: 2.5rem;
+
+    @media (max-height: 550px){
+        height: 80vh;
+    }
+
+
+    img {
+        width: 100%;
+        max-width: 20rem;
+
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+
+        filter: drop-shadow(1px 1px 1px rgb(5, 69, 4));
+      
+        @media (max-height: 650px){
+           width: 60%;
+        }
+        @media (max-height: 600px){
+            width: 50%;
+        }
+        @media (max-height: 599px){
+            width: 0%;
+        }
+         
+    }
+
+    @media #{$extraLargeDesktop} {
+
+
+        height: 73vh;
+        max-height: 80vh;
+
+
+        img {
+            max-width: 30rem;
+
+        }
+    }
+    
+
+    @media #{$largeDesktop} {
+
+        margin-top: 4.5rem;
+
+        img {
+            max-width: 23rem;
+
+        }
+    }
+
+
+
+
+}
+
+.main_section-intro-bg {
+    background-image: url("../img/bgsalad.png");
+
+    height: 50vh;
+    -webkit-clip-path: polygon(100% 0, 100% 63%, 0 93%, 0 0);
+    clip-path: polygon(100% 0, 100% 63%, 0 93%, 0 0);
+
+    background-size: cover;
+
+    @media (max-height: 550px){
+        height: 85vh;
+        -webkit-clip-path: polygon(100% 0, 100% 83%, 0 93%, 0 0);
+             clip-path: polygon(100% 0, 100% 83%, 0 93%, 0 0);
+    }
+   
+    
+
+    @media #{$extraLargeDesktop} {
+        height: 63vh;
+
+
+    }
+
+    @media #{$largeDesktop} {
+
+        height: 55vh;
+
+    }
+}
+
+.main_section-intro-txt {
+    position: absolute;
+
+    padding: 20px;
+    z-index: 1;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+
+    width: 20rem;
+
+
+    h1 {
+        margin-top: 2rem;
+        font-size: 2rem;
+        text-align: center;
+        color: $color-text;
+        font-weight: 600;
+
+        font-family: 'Pacifico', cursive;
+    }
+
+    h2 {
+        font-family: 'Merienda One', cursive;
+        margin-top: 1rem;
+        color: $color-text;
+        text-align: center;
+        font-size: .9rem;
+    }
+
+    a {
+        font-family: 'Merienda One', cursive;
+
+        display: block;
+        margin: 2rem auto;
+
+        padding: .5rem 1.5rem;
+
+        border: 2px solid white;
+        background-color: rgba(255, 0, 0, 0);
+
+        width: 6rem;
+    }
+
+    @media #{$smallDesktop} {
+        width: 35rem;
+    }
+
+    @media #{$largeDesktop} {
+
+        width: 35rem;
+    }
+
+    @media #{$mediumDesktop} {
+        width: 35rem;
+    }
+
+    @media #{$extraLargeDesktop} {
+        width: 65rem;
+
+        h1 {
+            font-size: map-get($font-sizes, XXLh1);
+
+            margin-bottom: 1.5rem;
+
+        }
+
+        h2 {
+
+
+            font-size: 1.5rem
+        }
+    }
+
+
+}
+
+#main_section-two {
+
+    position: relative;
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.main_section-two_intro {
+    margin: 1rem;
+
+    h3 {
+        font-family: 'Pacifico', cursive;
+        margin-top: 1rem;
+        text-align: center;
+        font-size: 1.5rem;
+
+        line-height: 1.5;
+    }
+
+    span {
+        color: rgb(7, 83, 7);
+        font-weight: 600;
+    }
+
+    p {
+        font-family: 'Merienda One', cursive;
+        margin-top: 1rem;
+        text-align: center;
+        font-size: .9rem;
+    }
+
+    @media #{$smallDesktop} {}
+
+    @media #{$largeDesktop} {}
+
+    @media #{$mediumDesktop} {}
+
+    @media #{$extraLargeDesktop} {
+        h3 {
+
+            font-size: map-get($font-sizes, XXLh3);
+
+
+        }
+
+
+
+        p {
+            margin-top: 1rem;
+            font-size: map-get($font-sizes, XXLp);
+        }
+    }
+
+}
+
+.main_section-two_catalog {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    margin-top: 3rem;
+    justify-content: space-evenly;
+}
+
+#main_section-three {
+    background-image: url("../img/bgsalad.png");
+    background-size: cover;
+
+    min-height: 70vh;
+
+    max-height: 80vh;
+
+    @media #{$smallDesktop} {
+        min-height: 49vh;
+    }
+
+    @media #{$largeDesktop} {
+        min-height: 49vh;
+
+    }
+
+    @media #{$mediumDesktop} {
+        min-height: 49vh;
+
+    }
+
+    @media #{$extraLargeDesktop} {
+        min-height: 49vh;
+    }
+
+    div {
+        padding: 5%;
+
+        h2 {
+            margin-top: 2rem;
+
+            font-size: 2rem;
+            text-align: center;
+            color: $color-text;
+            font-weight: 600;
+
+            font-family: 'Pacifico', cursive;
+
+
+        }
+
+        p {
+            margin-top: 2rem;
+            margin-bottom: 5rem;
+            font-family: 'Merienda One', cursive;
+            text-align: center;
+            font-size: .9rem;
+
+            line-height: 2;
+
+
+            color: $color-text;
+
+        }
+    }
+
+    @media #{$extraLargeDesktop} {
+        div {
+            h2 {
+
+                font-size: map-get($font-sizes, XXLh2);
+
+
+            }
+
+
+
+            p {
+                font-size: map-get($font-sizes, XXLp);
+            }
+        }
+
+    }
+
+    position: relative;
+
+
+}
+
+
+
+.curved0 {
+    position: relative;
+    background: white;
+    height: 10vh;
+    border-bottom-left-radius: 50% 20%;
+    border-bottom-right-radius: 50% 20%;
+
+    bottom: 2px;
+
+    @media #{$largeDesktop} {
+        bottom: 1px;
+    }
+
+    @media #{$extraLargeDesktop} {
+        bottom: 1px;
+    }
+
+}
+
+.curved1 {
+    position: relative;
+    background: #2c3e5000;
+    height: 5vh;
+    z-index: 0;
+
+    position: absolute;
+    bottom: 0px;
+    left: 0;
+    width: 100%;
+
+
+    bottom: -2px;
+
+    @media #{$largeDesktop} {
+        bottom: -1px;
+
+    }
+
+    @media #{$extraLargeDesktop} {
+
+        bottom: -2px;
+    }
+
+
+}
+
+.curved1::after {
+    content: '';
+    border-top-left-radius: 50% 100%;
+    border-top-right-radius: 50% 100%;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background: #fff;
+    height: 4vh;
+}
+
+#main_section-four {
+
+
+    h1 {
+        text-align: center;
+
+        font-family: 'Pacifico', cursive;
+
+        font-size: 2rem;
+
+        margin-bottom: 2rem;
+
+        color: rgb(7, 83, 7);
+        font-weight: 600;
+
+        position: relative;
+        z-index: 1;
+    }
+
+    @media #{$extraLargeDesktop} {
+
+        h1 {
+
+            font-size: map-get($font-sizes, XXLh2);
+
+
+        }
+
+
+
+
+    }
+
+
+}
+
+.main_section-four_catalog {
+    p {
+        font-family: 'Merienda One', cursive;
+
+        text-align: center;
+        font-size: 1rem;
+
+    }
+
+    @media #{$extraLargeDesktop} {
+
+        p {
+
+            font-size: map-get($font-sizes, XXLp);
+
+
+        }
+
+
+
+
+    }
+}
+
+.cards_catalog {
+    display: flex;
+    list-style: none;
+
+    width: 100%;
+    overflow-x: scroll;
+
+
+    @media #{$smallDesktop} {
+        justify-content: center;
+    }
+
+    @media #{$largeDesktop} {
+
+        justify-content: center;
+
+
+    }
+
+    @media #{$mediumDesktop} {
+        justify-content: center;
+
+
+    }
+
+    @media #{$extraLargeDesktop} {
+        justify-content: center;
+
+    }
+
+}
+
+.card_catalog {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+    background-color: #f2f2f2;
+    color: #444;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+
+    width: 10.8rem;
+    border-radius: 15px;
+
+    margin: 1rem;
+
+    font-family: 'Pacifico', cursive;
+
+
+    img {
+        height: 3rem;
+    }
+
+
+
+}
+
+.card_catalog-element {
+    margin: 5px;
+}
+
+h2.card_catalog-element {
+    font-weight: 800;
+
+}
+
+button.card_catalog-element {
+    white-space: nowrap;
+
+    text-align: center;
+
+    background-color: #f2f2f2;
+    color: #6f6f6f;
+
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    padding: 10px 30px;
+    font-size: 16px;
+    font-family: 'Merienda One', cursive;
+
+
+}
+
+.cards_catalog::-webkit-scrollbar {
+    height: 10px;
+}
+
+.cards_catalog::-webkit-scrollbar-thumb,
+.cards_catalog::-webkit-scrollbar-track {
+    border-radius: 92px;
+}
+
+.cards_catalog::-webkit-scrollbar-thumb {
+    background: rgb(8, 99, 39);
+}
+
+.cards_catalog::-webkit-scrollbar-track {
+    background: rgba(98, 197, 109, 0.432);
+}
+
+.cards_catalog::-webkit-scrollbar {
+    @media #{$smallDesktop} {
+        display: none;
+    }
+
+    @media #{$largeDesktop} {
+
+        display: none;
+    }
+
+    @media #{$mediumDesktop} {
+        display: none;
+    }
+
+    @media #{$extraLargeDesktop} {
+        display: none;
+    }
+
+
+}
+
+
+.main_section-four_products {
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    justify-content: space-evenly;
+
+}

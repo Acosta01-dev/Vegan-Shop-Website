@@ -1,0 +1,90 @@
+.card {
+    width: 100%;
+    max-width: 300px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+
+    margin: 1rem;
+}
+
+.card-image {
+    position: relative;
+    overflow: hidden;
+    height: 0;
+    padding-bottom: 66.67%;
+}
+
+.card-image img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease-in-out;
+}
+
+.card-image:hover img {
+    transform: scale(1.1);
+}
+
+.card-buy {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    p {
+        color: rgb(80, 52, 0);
+        font-family: 'Merienda One', cursive;
+
+        font-weight: 300;
+
+        background-color: antiquewhite;
+        line-height: normal;
+
+        border-radius: 15px;
+        
+        padding-left: 10px;
+        padding-right: 10px;
+        height: 25px;
+    }
+}
+
+.card-content {
+    padding: 20px;
+
+    .button {
+        display: inline-block;
+        padding: 10px 20px;
+        color: #fff;
+        border-radius: 5px;
+        text-decoration: none;
+        transition: background-color 0.3s ease-in-out;
+
+        font-family: 'Merienda One', cursive;
+
+    }
+
+}
+
+.card-title {
+    margin: 0 0 10px;
+    font-size: 18px;
+    font-weight: 600;
+
+    font-family: 'Pacifico', cursive;
+
+}
+
+.card-text {
+    margin: 0 0 20px;
+    font-size: 14px;
+    line-height: 1.5;
+
+    text-align: left;
+    font-family: 'Merienda One', cursive;
+
+}
