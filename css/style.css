@@ -351,13 +351,14 @@ form {
         width: 0%; } }
   @media only screen and (min-width: 1401px) {
     #main_section-intro {
-      height: 73vh;
+      margin-top: 3.1rem;
+      height: 79vh;
       max-height: 80vh; }
       #main_section-intro img {
         max-width: 30rem; } }
   @media only screen and (min-width: 1201px) and (max-width: 1400px) {
     #main_section-intro {
-      margin-top: 4.5rem; }
+      margin-top: 3.1rem; }
       #main_section-intro img {
         max-width: 23rem; } }
 
