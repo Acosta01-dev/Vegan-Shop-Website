@@ -346,7 +346,7 @@ form {
     @media (max-height: 600px) {
       #main_section-intro img {
         width: 50%; } }
-    @media (max-height: 550px) {
+    @media (max-height: 599px) {
       #main_section-intro img {
         width: 0%; } }
   @media only screen and (min-width: 1401px) {
