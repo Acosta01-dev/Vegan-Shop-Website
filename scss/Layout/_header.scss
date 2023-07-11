@@ -41,7 +41,7 @@
     display: flex;
     justify-content: space-between;
 
-    line-height: 50px; //Tam del navbar.
+    line-height: 50px;  //Tam del navbar
 }
 
 .link {
@@ -137,7 +137,7 @@
         position: absolute;
 
         top: -100vh;
-        top: 50px;
+        top: 50px; //Pos del menu
         display: flex;
         flex-direction: column;
         text-align: center;

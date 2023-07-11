@@ -1,7 +1,7 @@
 .body_index {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 1px 1fr auto;
+    grid-template-rows: auto 1fr auto;
 
     grid-template-areas:
         "header header"
@@ -51,7 +51,7 @@
         @media (max-height: 600px){
             width: 50%;
         }
-        @media (max-height: 599px){
+        @media (max-height: 550px){
             width: 0%;
         }
          
