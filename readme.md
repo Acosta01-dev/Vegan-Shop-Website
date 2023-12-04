@@ -24,3 +24,4 @@ This website was built using HTML, CSS, and JavaScript. The website features res
 #### License
 This website is licensed under the MIT License. Feel free to use, modify, and distribute this website for personal or commercial use.
 
+![vegan](https://github.com/Acosta01-dev/Vegan-Shop-Website/assets/79601880/7d559d28-01ca-47e1-bff0-1fe7c9eaba33)
