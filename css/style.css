@@ -316,7 +316,7 @@ form {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: auto 1fr auto;
-  grid-template-areas: "header header" "main main" "footer footer"; }
+  grid-template-areas: "header header" "main main" "footer footer"; }
 
 .main_index {
   grid-area: main; }
@@ -352,10 +352,10 @@ form {
   @media only screen and (min-width: 1401px) {
     #main_section-intro {
       margin-top: 3.1rem;
-      height: 79vh;
-      max-height: 80vh; }
+      height: 70vh;
+      max-height: 85vh; }
       #main_section-intro img {
-        max-width: 30rem; } }
+        max-width: 31.5rem; } }
   @media only screen and (min-width: 1201px) and (max-width: 1400px) {
     #main_section-intro {
       margin-top: 3.1rem; }
@@ -395,6 +395,9 @@ form {
     color: #EDF1D6;
     font-weight: 600;
     font-family: 'Pacifico', cursive; }
+    @media only screen and (min-width: 1401px) {
+      .main_section-intro-txt h1 {
+        margin-top: 3.6rem; } }
   .main_section-intro-txt h2 {
     font-family: 'Merienda One', cursive;
     margin-top: 1rem;
