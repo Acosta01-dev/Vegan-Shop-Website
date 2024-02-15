@@ -2,7 +2,6 @@
     background-color: #333;
     color: #fff;
 
-    z-index: 1;
 
     grid-area: header;
 
@@ -14,17 +13,34 @@
     width: 100%;
 
 
-
     z-index: 10;
 
 }
 
+.links-cart{
+    position: fixed;
+    top: 1%;
+    z-index: 10;
+    right: -23px;
+    @media #{$extraLargeDesktop} {
+        right: -35px;
+    }
+    @media screen and (max-width:800px) {
+        right: 55px;
+
+    }
+
+}
 .logo {
     position: relative;
     z-index: 20;
 
 
     margin-left: 20px;
+
+    @media #{$extraLargeDesktop} {
+        top: 10px;
+    }
 
     span {
         font-weight: 900;
@@ -33,7 +49,6 @@
 }
 
 .container_nav {
-
     position: relative;
     z-index: 20;
 
@@ -41,19 +56,16 @@
     display: flex;
     justify-content: space-between;
 
-    line-height: 50px;  //Tam del navbar
+    line-height: 50px; //Tam del navbar
 }
 
 .link {
     display: inline-block;
-
-
-
-
 }
 
+
 .links {
-    margin-right: 20px;
+    margin-right: 80px;
     display: flex;
 
 
@@ -61,7 +73,6 @@
 
     a {
         transition: .2s;
-
         text-decoration: none;
 
 
@@ -90,11 +101,13 @@
             &:last-of-type {
                 margin-right: 20px;
             }
+
         }
 
         @media #{$extraLargeDesktop} {
             width: 7rem;
             text-align: center;
+            padding: .5rem;
 
             &:last-of-type {
                 margin-right: 20px;
@@ -107,9 +120,12 @@
             background-color: $color-background;
         }
 
-
+        &:last-child {
+            background-color: rgba(255, 0, 0, 0);
+        }
 
     }
+
 }
 
 .toggle {
@@ -126,11 +142,10 @@
 }
 
 @media screen and (max-width:800px) {
+
     .toggle {
         display: block;
-
         transition: .5s;
-
     }
 
     .links {
@@ -150,15 +165,9 @@
 
         max-height: 0;
 
+
         a {
-
             margin-right: 0px;
-
-
-
-
-
-
         }
     }
 
