@@ -18,8 +18,9 @@
 }
 
 .links-cart{
+    cursor: pointer;
     position: fixed;
-    top: 1%;
+    top: .8%;
     z-index: 10;
     right: -23px;
     @media #{$extraLargeDesktop} {

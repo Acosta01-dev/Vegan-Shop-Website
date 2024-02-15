@@ -187,8 +187,9 @@ html {
   z-index: 10; }
 
 .links-cart {
+  cursor: pointer;
   position: fixed;
-  top: 1%;
+  top: .8%;
   z-index: 10;
   right: -23px; }
   @media only screen and (min-width: 1401px) {
