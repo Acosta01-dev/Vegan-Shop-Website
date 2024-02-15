@@ -625,7 +625,8 @@ form {
     height: 3rem; }
 
 .card_catalog-element {
-  margin: 5px; }
+  margin: 5px;
+  cursor: pointer; }
 
 h2.card_catalog-element {
   font-weight: 800; }
